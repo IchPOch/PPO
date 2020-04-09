@@ -14,56 +14,56 @@ using System.Globalization;
 
 namespace WindowsFormsApp1
 {
-    
 
-    public partial class Form1 : Form
-    {
-    public List<Information> Objects = new List<Information>();
-    public List<TextBox> List_Text_Box = new List<TextBox>();
-        public Form1()
-        {
-            InitializeComponent();
-            List_Text_Box.Add(NM);
-            List_Text_Box.Add(BO);
+
+	public partial class Form1 : Form
+	{
+		public List<Information> Objects = new List<Information>();
+		public List<TextBox> List_Text_Box = new List<TextBox>();
+		public Form1()
+		{
+			InitializeComponent();
+			List_Text_Box.Add(NM);
+			List_Text_Box.Add(BO);
 			List_Text_Box.Add(JA);
-            List_Text_Box.Add(PAG);
-            List_Text_Box.Add(OPI);
+			List_Text_Box.Add(PAG);
+			List_Text_Box.Add(OPI);
 			List_Text_Box.Add(CO);
 
 		}
 
-        private void SaveBut_Click(object sender, EventArgs e)
-        {
-            DialogResult dr = MessageBox.Show("Сохранить изменения?",
-                "сохранение",
-                MessageBoxButtons.OKCancel,
-                MessageBoxIcon.Question,
-                MessageBoxDefaultButton.Button2);
-            if (dr == DialogResult.OK)
-            {
+		private void SaveBut_Click(object sender, EventArgs e)
+		{
+			DialogResult dr = MessageBox.Show("Сохранить изменения?",
+				"сохранение",
+				MessageBoxButtons.OKCancel,
+				MessageBoxIcon.Question,
+				MessageBoxDefaultButton.Button2);
+			if (dr == DialogResult.OK)
+			{
 				this.Validate();
 				this.biblBindingSource.EndEdit();
 				biblTableAdapter2.Update(this.kursDataSet.Bibl);
-                kursDataSet.Tables[0].AcceptChanges();
-               Bibl.data_update(this.Table, this.Objects);
-            }
+				kursDataSet.Tables[0].AcceptChanges();
+				Bibl.data_update(this.Table, this.Objects);
+			}
 
-        }
+		}
 
-        private void biblBindingNavigatorSaveItem_Click(object sender, EventArgs e)
-        {
-            this.Validate();
-			
+		private void biblBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+		{
+			this.Validate();
+
 			this.biblBindingSource.EndEdit();
 
 			Bibl.data_recover(this.Table, this.Objects);
 			Bibl.data_update(this.Table, this.Objects);
-        }
+		}
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "kursDataSet.Bibl". При необходимости она может быть перемещена или удалена.
-            this.biblTableAdapter2.Fill(this.kursDataSet.Bibl);
+		private void Form1_Load(object sender, EventArgs e)
+		{
+			// TODO: данная строка кода позволяет загрузить данные в таблицу "kursDataSet.Bibl". При необходимости она может быть перемещена или удалена.
+			this.biblTableAdapter2.Fill(this.kursDataSet.Bibl);
 			// TODO: данная строка кода позволяет загрузить данные в таблицу "microsoft_Office_Access_2007_База_данныхDataSet1.Bibl". При необходимости она может быть перемещена или удалена.
 
 			Bibl.data_recover(this.Table, this.Objects);
@@ -71,22 +71,22 @@ namespace WindowsFormsApp1
 
 		}
 
-        private void DelBut_Click(object sender, EventArgs e)
-        {
-            DialogResult dr = MessageBox.Show("Удалить запись?",
-                "Удаление",
-                MessageBoxButtons.OKCancel,
-                MessageBoxIcon.Question,
-                MessageBoxDefaultButton.Button2);
+		private void DelBut_Click(object sender, EventArgs e)
+		{
+			DialogResult dr = MessageBox.Show("Удалить запись?",
+				"Удаление",
+				MessageBoxButtons.OKCancel,
+				MessageBoxIcon.Question,
+				MessageBoxDefaultButton.Button2);
 			if (dr == DialogResult.OK)
 			{
-			 Bibl.position_delete(this.Table, this.Objects); 
+				Bibl.position_delete(this.Table, this.Objects);
 			}
 
-        }
+		}
 
-        private void SearchBut_Click(object sender, EventArgs e)
-        {
+		private void SearchBut_Click(object sender, EventArgs e)
+		{
 			if (NmCh.Checked)
 			{
 				if (SearchBox.Text.Length == 0) SearchBox.Text = "Вы не ввели параметр для поиска";
@@ -224,7 +224,7 @@ namespace WindowsFormsApp1
 				{
 					foreach (DataGridViewRow row in Table.SelectedRows)
 					{
-						Bibl.edit(List_Text_Box,row);
+						Bibl.edit(List_Text_Box, row);
 					}
 					Table.Refresh();
 					Bibl.data_update(this.Table, this.Objects);
@@ -332,26 +332,62 @@ namespace WindowsFormsApp1
 			{
 				row.Selected = false;
 			}
-			NM.Clear(); PAG.Clear(); BO.Clear(); OPI.Clear(); 
+			NM.Clear(); PAG.Clear(); BO.Clear(); OPI.Clear();
 			JA.Clear(); CO.Clear();
 
 		}
 
-		private void Find_SelectionChanged(object sender, EventArgs e)
+		private void Find_SelectionChanged(object sender, EventArgs e)//отображениевыбранного сотрудника из dgv поиска
 		{
 			button_off();
 			foreach (DataGridViewRow row in Find.SelectedRows)
 			{
 				Bibl.Show_Find(List_Text_Box, row);
+				foreach (DataGridViewRow Drow in Table.Rows)
+				{
+					if (row.Cells["index"].Value.ToString() ==
+					Drow.Cells["Cod"].Value.ToString() &&
+					row.Cells["Name"].Value.ToString() ==
+					Drow.Cells["name"].Value.ToString() &&
+					row.Cells["bookname"].Value.ToString() ==
+					Drow.Cells["Book"].Value.ToString() &&
+					row.Cells["Janr"].Value.ToString() ==
+					Drow.Cells["janr"].Value.ToString()
+					&&
+					row.Cells["Opis"].Value.ToString() ==
+					Drow.Cells["opis"].Value.ToString())
+					{
+						foreach (DataGridViewRow Drow2 in
+						Table.SelectedRows)
+						{
+							Drow2.Selected = false;
+						}
+						Drow.Selected = true;
+					}
+				}
 			}
-
 		}
+
+
+
 
 		private void SbrosBut_Click(object sender, EventArgs e)
 		{
+			foreach (DataGridViewRow row in Table.SelectedRows)
+			{
+				Bibl.Show(List_Text_Box, row);
+			}
+
 			NmCh.Enabled = true;
 			JaCh.Enabled = true;
 			BoCh.Enabled = true;
+			Table.BringToFront();
+		}
+
+		private void Table_CellContentClick(object sender, DataGridViewCellEventArgs e)
+		{
+
 		}
 	}
 }
+

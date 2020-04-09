@@ -80,7 +80,7 @@
             // 
             // AddBut
             // 
-            this.AddBut.Location = new System.Drawing.Point(3, 197);
+            this.AddBut.Location = new System.Drawing.Point(0, 171);
             this.AddBut.Name = "AddBut";
             this.AddBut.Size = new System.Drawing.Size(75, 23);
             this.AddBut.TabIndex = 0;
@@ -90,7 +90,7 @@
             // 
             // CancelBut
             // 
-            this.CancelBut.Location = new System.Drawing.Point(165, 197);
+            this.CancelBut.Location = new System.Drawing.Point(165, 171);
             this.CancelBut.Name = "CancelBut";
             this.CancelBut.Size = new System.Drawing.Size(75, 23);
             this.CancelBut.TabIndex = 1;
@@ -100,7 +100,7 @@
             // 
             // OkBut
             // 
-            this.OkBut.Location = new System.Drawing.Point(84, 197);
+            this.OkBut.Location = new System.Drawing.Point(84, 171);
             this.OkBut.Name = "OkBut";
             this.OkBut.Size = new System.Drawing.Size(75, 23);
             this.OkBut.TabIndex = 2;
@@ -126,9 +126,9 @@
             this.groupBox1.Controls.Add(this.PAG);
             this.groupBox1.Controls.Add(this.NM);
             this.groupBox1.Controls.Add(this.BO);
-            this.groupBox1.Location = new System.Drawing.Point(12, 249);
+            this.groupBox1.Location = new System.Drawing.Point(12, 284);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(335, 235);
+            this.groupBox1.Size = new System.Drawing.Size(335, 200);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "КНИГА";
@@ -136,7 +136,7 @@
             // Код
             // 
             this.Код.AutoSize = true;
-            this.Код.Location = new System.Drawing.Point(27, 49);
+            this.Код.Location = new System.Drawing.Point(31, 26);
             this.Код.Name = "Код";
             this.Код.Size = new System.Drawing.Size(26, 13);
             this.Код.TabIndex = 16;
@@ -144,14 +144,14 @@
             // 
             // CO
             // 
-            this.CO.Location = new System.Drawing.Point(59, 46);
+            this.CO.Location = new System.Drawing.Point(59, 19);
             this.CO.Name = "CO";
             this.CO.Size = new System.Drawing.Size(100, 20);
             this.CO.TabIndex = 16;
             // 
             // RedBut
             // 
-            this.RedBut.Location = new System.Drawing.Point(246, 197);
+            this.RedBut.Location = new System.Drawing.Point(246, 171);
             this.RedBut.Name = "RedBut";
             this.RedBut.Size = new System.Drawing.Size(75, 23);
             this.RedBut.TabIndex = 5;
@@ -162,7 +162,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(0, 124);
+            this.label5.Location = new System.Drawing.Point(0, 98);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(57, 13);
             this.label5.TabIndex = 11;
@@ -170,7 +170,7 @@
             // 
             // OPI
             // 
-            this.OPI.Location = new System.Drawing.Point(63, 124);
+            this.OPI.Location = new System.Drawing.Point(59, 98);
             this.OPI.Multiline = true;
             this.OPI.Name = "OPI";
             this.OPI.Size = new System.Drawing.Size(264, 67);
@@ -179,7 +179,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(166, 101);
+            this.label4.Location = new System.Drawing.Point(166, 79);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(57, 13);
             this.label4.TabIndex = 11;
@@ -188,7 +188,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(17, 98);
+            this.label3.Location = new System.Drawing.Point(21, 79);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(36, 13);
             this.label3.TabIndex = 10;
@@ -197,7 +197,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(186, 72);
+            this.label2.Location = new System.Drawing.Point(186, 52);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(37, 13);
             this.label2.TabIndex = 10;
@@ -206,7 +206,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 72);
+            this.label1.Location = new System.Drawing.Point(20, 52);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(37, 13);
             this.label1.TabIndex = 9;
@@ -214,28 +214,28 @@
             // 
             // JA
             // 
-            this.JA.Location = new System.Drawing.Point(59, 98);
+            this.JA.Location = new System.Drawing.Point(59, 72);
             this.JA.Name = "JA";
             this.JA.Size = new System.Drawing.Size(100, 20);
             this.JA.TabIndex = 5;
             // 
             // PAG
             // 
-            this.PAG.Location = new System.Drawing.Point(229, 98);
+            this.PAG.Location = new System.Drawing.Point(229, 71);
             this.PAG.Name = "PAG";
             this.PAG.Size = new System.Drawing.Size(100, 20);
             this.PAG.TabIndex = 6;
             // 
             // NM
             // 
-            this.NM.Location = new System.Drawing.Point(59, 72);
+            this.NM.Location = new System.Drawing.Point(59, 45);
             this.NM.Name = "NM";
             this.NM.Size = new System.Drawing.Size(100, 20);
             this.NM.TabIndex = 7;
             // 
             // BO
             // 
-            this.BO.Location = new System.Drawing.Point(229, 72);
+            this.BO.Location = new System.Drawing.Point(229, 45);
             this.BO.Name = "BO";
             this.BO.Size = new System.Drawing.Size(100, 20);
             this.BO.TabIndex = 8;
@@ -315,6 +315,7 @@
             this.Table.Name = "Table";
             this.Table.Size = new System.Drawing.Size(642, 285);
             this.Table.TabIndex = 9;
+            this.Table.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Table_CellContentClick);
             this.Table.SelectionChanged += new System.EventHandler(this.Table_SelectionChanged);
             // 
             // Cod
@@ -365,7 +366,7 @@
             // 
             // SearchBox
             // 
-            this.SearchBox.Location = new System.Drawing.Point(15, 28);
+            this.SearchBox.Location = new System.Drawing.Point(12, 28);
             this.SearchBox.Name = "SearchBox";
             this.SearchBox.Size = new System.Drawing.Size(198, 20);
             this.SearchBox.TabIndex = 11;
@@ -373,7 +374,7 @@
             // JaCh
             // 
             this.JaCh.AutoSize = true;
-            this.JaCh.Location = new System.Drawing.Point(151, 5);
+            this.JaCh.Location = new System.Drawing.Point(170, 5);
             this.JaCh.Name = "JaCh";
             this.JaCh.Size = new System.Drawing.Size(46, 17);
             this.JaCh.TabIndex = 12;
@@ -384,7 +385,7 @@
             // BoCh
             // 
             this.BoCh.AutoSize = true;
-            this.BoCh.Location = new System.Drawing.Point(75, 5);
+            this.BoCh.Location = new System.Drawing.Point(92, 5);
             this.BoCh.Name = "BoCh";
             this.BoCh.Size = new System.Drawing.Size(72, 17);
             this.BoCh.TabIndex = 13;
@@ -440,7 +441,7 @@
             this.Controls.Add(this.sbros);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.Find);
-            this.Name = "Form1";
+            //this.Name = "Form1";
             this.Text = "Сохранить";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);

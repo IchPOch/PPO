@@ -86,6 +86,7 @@ namespace WindowsFormsApp1
 		}
 		public static void Show(List<TextBox> f, DataGridViewRow row)
 		{
+
 			f[0].Text = row.Cells["Name"].Value.ToString();
 			f[1].Text = row.Cells["Book"].Value.ToString();
 			f[2].Text = row.Cells["Janr"].Value.ToString();
