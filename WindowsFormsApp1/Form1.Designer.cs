@@ -242,9 +242,9 @@
             // 
             // sbros
             // 
-            this.sbros.Location = new System.Drawing.Point(353, 446);
+            this.sbros.Location = new System.Drawing.Point(353, 455);
             this.sbros.Name = "sbros";
-            this.sbros.Size = new System.Drawing.Size(105, 23);
+            this.sbros.Size = new System.Drawing.Size(107, 23);
             this.sbros.TabIndex = 6;
             this.sbros.Text = "Снять выделение";
             this.sbros.UseVisualStyleBackColor = true;
@@ -252,9 +252,9 @@
             // 
             // DelBut
             // 
-            this.DelBut.Location = new System.Drawing.Point(353, 417);
+            this.DelBut.Location = new System.Drawing.Point(353, 363);
             this.DelBut.Name = "DelBut";
-            this.DelBut.Size = new System.Drawing.Size(105, 23);
+            this.DelBut.Size = new System.Drawing.Size(107, 42);
             this.DelBut.TabIndex = 7;
             this.DelBut.Text = "Delete";
             this.DelBut.UseVisualStyleBackColor = true;
@@ -262,9 +262,9 @@
             // 
             // SaveBut
             // 
-            this.SaveBut.Location = new System.Drawing.Point(353, 388);
+            this.SaveBut.Location = new System.Drawing.Point(353, 411);
             this.SaveBut.Name = "SaveBut";
-            this.SaveBut.Size = new System.Drawing.Size(105, 23);
+            this.SaveBut.Size = new System.Drawing.Size(107, 38);
             this.SaveBut.TabIndex = 8;
             this.SaveBut.Text = "Save";
             this.SaveBut.UseVisualStyleBackColor = true;
@@ -356,9 +356,9 @@
             // 
             // SearchBut
             // 
-            this.SearchBut.Location = new System.Drawing.Point(92, 54);
+            this.SearchBut.Location = new System.Drawing.Point(106, 54);
             this.SearchBut.Name = "SearchBut";
-            this.SearchBut.Size = new System.Drawing.Size(105, 23);
+            this.SearchBut.Size = new System.Drawing.Size(88, 25);
             this.SearchBut.TabIndex = 10;
             this.SearchBut.Text = "Serch";
             this.SearchBut.UseVisualStyleBackColor = true;
@@ -418,7 +418,7 @@
             // 
             this.SbrosBut.Location = new System.Drawing.Point(12, 54);
             this.SbrosBut.Name = "SbrosBut";
-            this.SbrosBut.Size = new System.Drawing.Size(75, 23);
+            this.SbrosBut.Size = new System.Drawing.Size(88, 25);
             this.SbrosBut.TabIndex = 16;
             this.SbrosBut.Text = "Сброс";
             this.SbrosBut.UseVisualStyleBackColor = true;

@@ -373,15 +373,15 @@ namespace WindowsFormsApp1
 
 		private void SbrosBut_Click(object sender, EventArgs e)
 		{
-			foreach (DataGridViewRow row in Table.SelectedRows)
-			{
-				Bibl.Show(List_Text_Box, row);
-			}
-
-			NmCh.Enabled = true;
-			JaCh.Enabled = true;
 			BoCh.Enabled = true;
+			BoCh.Checked = false;
+			JaCh.Enabled = true;
+			JaCh.Checked = false;
+			NmCh.Enabled = true;
+			NmCh.Checked = false;
+			SearchBox.Enabled = true;
 			Table.BringToFront();
+			SearchBox.Clear();
 		}
 
 		private void Table_CellContentClick(object sender, DataGridViewCellEventArgs e)
