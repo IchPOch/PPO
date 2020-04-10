@@ -155,7 +155,7 @@
             this.RedBut.Name = "RedBut";
             this.RedBut.Size = new System.Drawing.Size(75, 23);
             this.RedBut.TabIndex = 5;
-            this.RedBut.Text = "Redact";
+            this.RedBut.Text = "Activate";
             this.RedBut.UseVisualStyleBackColor = true;
             this.RedBut.Click += new System.EventHandler(this.RedBut_Click);
             // 
@@ -441,7 +441,7 @@
             this.Controls.Add(this.sbros);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.Find);
-            //this.Name = "Form1";
+            this.Name = "Form1";
             this.Text = "Сохранить";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
