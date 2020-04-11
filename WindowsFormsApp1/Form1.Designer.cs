@@ -441,7 +441,7 @@
             this.Controls.Add(this.sbros);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.Find);
-            this.Name = "Form1";
+            //this.Name = "Form1";
             this.Text = "Сохранить";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
