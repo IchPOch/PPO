@@ -33,15 +33,15 @@
             this.CancelBut = new System.Windows.Forms.Button();
             this.OkBut = new System.Windows.Forms.Button();
             this.BookInfo = new System.Windows.Forms.GroupBox();
-            this.Код = new System.Windows.Forms.Label();
+            this.Cood = new System.Windows.Forms.Label();
             this.CO = new System.Windows.Forms.TextBox();
             this.RedBut = new System.Windows.Forms.Button();
             this.Opisanie = new System.Windows.Forms.Label();
             this.OPI = new System.Windows.Forms.TextBox();
             this.Pages = new System.Windows.Forms.Label();
-            this.жанр = new System.Windows.Forms.Label();
+            this.Janre = new System.Windows.Forms.Label();
             this.Booook = new System.Windows.Forms.Label();
-            this.Автор = new System.Windows.Forms.Label();
+            this.Avtor = new System.Windows.Forms.Label();
             this.JA = new System.Windows.Forms.TextBox();
             this.PAG = new System.Windows.Forms.TextBox();
             this.NM = new System.Windows.Forms.TextBox();
@@ -110,7 +110,7 @@
             // 
             // BookInfo
             // 
-            this.BookInfo.Controls.Add(this.Код);
+            this.BookInfo.Controls.Add(this.Cood);
             this.BookInfo.Controls.Add(this.CO);
             this.BookInfo.Controls.Add(this.RedBut);
             this.BookInfo.Controls.Add(this.Opisanie);
@@ -118,10 +118,10 @@
             this.BookInfo.Controls.Add(this.CancelBut);
             this.BookInfo.Controls.Add(this.OkBut);
             this.BookInfo.Controls.Add(this.Pages);
-            this.BookInfo.Controls.Add(this.жанр);
+            this.BookInfo.Controls.Add(this.Janre);
             this.BookInfo.Controls.Add(this.AddBut);
             this.BookInfo.Controls.Add(this.Booook);
-            this.BookInfo.Controls.Add(this.Автор);
+            this.BookInfo.Controls.Add(this.Avtor);
             this.BookInfo.Controls.Add(this.JA);
             this.BookInfo.Controls.Add(this.PAG);
             this.BookInfo.Controls.Add(this.NM);
@@ -133,14 +133,14 @@
             this.BookInfo.TabStop = false;
             this.BookInfo.Text = "КНИГА";
             // 
-            // Код
+            // Cood
             // 
-            this.Код.AutoSize = true;
-            this.Код.Location = new System.Drawing.Point(31, 26);
-            this.Код.Name = "Код";
-            this.Код.Size = new System.Drawing.Size(26, 13);
-            this.Код.TabIndex = 16;
-            this.Код.Text = "Код";
+            this.Cood.AutoSize = true;
+            this.Cood.Location = new System.Drawing.Point(31, 26);
+            this.Cood.Name = "Cood";
+            this.Cood.Size = new System.Drawing.Size(26, 13);
+            this.Cood.TabIndex = 16;
+            this.Cood.Text = "Код";
             // 
             // CO
             // 
@@ -185,14 +185,14 @@
             this.Pages.TabIndex = 11;
             this.Pages.Text = "Страницы";
             // 
-            // жанр
+            // Janre
             // 
-            this.жанр.AutoSize = true;
-            this.жанр.Location = new System.Drawing.Point(21, 79);
-            this.жанр.Name = "жанр";
-            this.жанр.Size = new System.Drawing.Size(36, 13);
-            this.жанр.TabIndex = 10;
-            this.жанр.Text = "Жанр";
+            this.Janre.AutoSize = true;
+            this.Janre.Location = new System.Drawing.Point(21, 79);
+            this.Janre.Name = "Janre";
+            this.Janre.Size = new System.Drawing.Size(36, 13);
+            this.Janre.TabIndex = 10;
+            this.Janre.Text = "Жанр";
             // 
             // Booook
             // 
@@ -203,14 +203,14 @@
             this.Booook.TabIndex = 10;
             this.Booook.Text = "Книга";
             // 
-            // Автор
+            // Avtor
             // 
-            this.Автор.AutoSize = true;
-            this.Автор.Location = new System.Drawing.Point(20, 52);
-            this.Автор.Name = "Автор";
-            this.Автор.Size = new System.Drawing.Size(37, 13);
-            this.Автор.TabIndex = 9;
-            this.Автор.Text = "Автор";
+            this.Avtor.AutoSize = true;
+            this.Avtor.Location = new System.Drawing.Point(20, 52);
+            this.Avtor.Name = "Avtor";
+            this.Avtor.Size = new System.Drawing.Size(37, 13);
+            this.Avtor.TabIndex = 9;
+            this.Avtor.Text = "Автор";
             // 
             // JA
             // 
@@ -467,9 +467,9 @@
         private System.Windows.Forms.Label Opisanie;
         private System.Windows.Forms.TextBox OPI;
         private System.Windows.Forms.Label Pages;
-        private System.Windows.Forms.Label жанр;
+        private System.Windows.Forms.Label Janre;
         private System.Windows.Forms.Label Booook;
-        private System.Windows.Forms.Label Автор;
+        private System.Windows.Forms.Label Avtor;
         private System.Windows.Forms.TextBox JA;
         private System.Windows.Forms.TextBox PAG;
         private System.Windows.Forms.TextBox NM;
@@ -500,7 +500,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Page;
         private System.Windows.Forms.DataGridViewTextBoxColumn Opis;
         private System.Windows.Forms.TextBox CO;
-        private System.Windows.Forms.Label Код;
+        private System.Windows.Forms.Label Cood;
         private System.Windows.Forms.Button SbrosBut;
     }
 }
