@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class Form1
+    partial class Main
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -32,16 +32,16 @@
             this.AddBut = new System.Windows.Forms.Button();
             this.CancelBut = new System.Windows.Forms.Button();
             this.OkBut = new System.Windows.Forms.Button();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.BookInfo = new System.Windows.Forms.GroupBox();
             this.Код = new System.Windows.Forms.Label();
             this.CO = new System.Windows.Forms.TextBox();
             this.RedBut = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
+            this.Opisanie = new System.Windows.Forms.Label();
             this.OPI = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.Pages = new System.Windows.Forms.Label();
+            this.жанр = new System.Windows.Forms.Label();
+            this.Booook = new System.Windows.Forms.Label();
+            this.Автор = new System.Windows.Forms.Label();
             this.JA = new System.Windows.Forms.TextBox();
             this.PAG = new System.Windows.Forms.TextBox();
             this.NM = new System.Windows.Forms.TextBox();
@@ -69,7 +69,7 @@
             this.NmCh = new System.Windows.Forms.CheckBox();
             this.Find = new System.Windows.Forms.DataGridView();
             this.SbrosBut = new System.Windows.Forms.Button();
-            this.groupBox1.SuspendLayout();
+            this.BookInfo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.biblBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.biblBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kursDataSet)).BeginInit();
@@ -108,30 +108,30 @@
             this.OkBut.UseVisualStyleBackColor = true;
             this.OkBut.Click += new System.EventHandler(this.OkBut_Click);
             // 
-            // groupBox1
+            // BookInfo
             // 
-            this.groupBox1.Controls.Add(this.Код);
-            this.groupBox1.Controls.Add(this.CO);
-            this.groupBox1.Controls.Add(this.RedBut);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.OPI);
-            this.groupBox1.Controls.Add(this.CancelBut);
-            this.groupBox1.Controls.Add(this.OkBut);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.AddBut);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.JA);
-            this.groupBox1.Controls.Add(this.PAG);
-            this.groupBox1.Controls.Add(this.NM);
-            this.groupBox1.Controls.Add(this.BO);
-            this.groupBox1.Location = new System.Drawing.Point(12, 284);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(335, 200);
-            this.groupBox1.TabIndex = 4;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "КНИГА";
+            this.BookInfo.Controls.Add(this.Код);
+            this.BookInfo.Controls.Add(this.CO);
+            this.BookInfo.Controls.Add(this.RedBut);
+            this.BookInfo.Controls.Add(this.Opisanie);
+            this.BookInfo.Controls.Add(this.OPI);
+            this.BookInfo.Controls.Add(this.CancelBut);
+            this.BookInfo.Controls.Add(this.OkBut);
+            this.BookInfo.Controls.Add(this.Pages);
+            this.BookInfo.Controls.Add(this.жанр);
+            this.BookInfo.Controls.Add(this.AddBut);
+            this.BookInfo.Controls.Add(this.Booook);
+            this.BookInfo.Controls.Add(this.Автор);
+            this.BookInfo.Controls.Add(this.JA);
+            this.BookInfo.Controls.Add(this.PAG);
+            this.BookInfo.Controls.Add(this.NM);
+            this.BookInfo.Controls.Add(this.BO);
+            this.BookInfo.Location = new System.Drawing.Point(12, 284);
+            this.BookInfo.Name = "BookInfo";
+            this.BookInfo.Size = new System.Drawing.Size(335, 200);
+            this.BookInfo.TabIndex = 4;
+            this.BookInfo.TabStop = false;
+            this.BookInfo.Text = "КНИГА";
             // 
             // Код
             // 
@@ -159,14 +159,14 @@
             this.RedBut.UseVisualStyleBackColor = true;
             this.RedBut.Click += new System.EventHandler(this.RedBut_Click);
             // 
-            // label5
+            // Opisanie
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(0, 98);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 13);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Описание";
+            this.Opisanie.AutoSize = true;
+            this.Opisanie.Location = new System.Drawing.Point(0, 98);
+            this.Opisanie.Name = "Opisanie";
+            this.Opisanie.Size = new System.Drawing.Size(57, 13);
+            this.Opisanie.TabIndex = 11;
+            this.Opisanie.Text = "Описание";
             // 
             // OPI
             // 
@@ -176,41 +176,41 @@
             this.OPI.Size = new System.Drawing.Size(264, 67);
             this.OPI.TabIndex = 8;
             // 
-            // label4
+            // Pages
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(166, 79);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(57, 13);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Страницы";
+            this.Pages.AutoSize = true;
+            this.Pages.Location = new System.Drawing.Point(166, 79);
+            this.Pages.Name = "Pages";
+            this.Pages.Size = new System.Drawing.Size(57, 13);
+            this.Pages.TabIndex = 11;
+            this.Pages.Text = "Страницы";
             // 
-            // label3
+            // жанр
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(21, 79);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(36, 13);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "Жанр";
+            this.жанр.AutoSize = true;
+            this.жанр.Location = new System.Drawing.Point(21, 79);
+            this.жанр.Name = "жанр";
+            this.жанр.Size = new System.Drawing.Size(36, 13);
+            this.жанр.TabIndex = 10;
+            this.жанр.Text = "Жанр";
             // 
-            // label2
+            // Booook
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(186, 52);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 13);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Книга";
+            this.Booook.AutoSize = true;
+            this.Booook.Location = new System.Drawing.Point(186, 52);
+            this.Booook.Name = "Booook";
+            this.Booook.Size = new System.Drawing.Size(37, 13);
+            this.Booook.TabIndex = 10;
+            this.Booook.Text = "Книга";
             // 
-            // label1
+            // Автор
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 52);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 13);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Автор";
+            this.Автор.AutoSize = true;
+            this.Автор.Location = new System.Drawing.Point(20, 52);
+            this.Автор.Name = "Автор";
+            this.Автор.Size = new System.Drawing.Size(37, 13);
+            this.Автор.TabIndex = 9;
+            this.Автор.Text = "Автор";
             // 
             // JA
             // 
@@ -424,7 +424,7 @@
             this.SbrosBut.UseVisualStyleBackColor = true;
             this.SbrosBut.Click += new System.EventHandler(this.SbrosBut_Click);
             // 
-            // Form1
+            // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -439,13 +439,13 @@
             this.Controls.Add(this.SaveBut);
             this.Controls.Add(this.DelBut);
             this.Controls.Add(this.sbros);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.BookInfo);
             this.Controls.Add(this.Find);
-            //this.Name = "Form1";
-            this.Text = "Сохранить";
+            this.Name = "Main";
+            this.Text = "Форма";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.BookInfo.ResumeLayout(false);
+            this.BookInfo.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.biblBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.biblBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kursDataSet)).EndInit();
@@ -462,14 +462,14 @@
         private System.Windows.Forms.Button AddBut;
         private System.Windows.Forms.Button CancelBut;
         private System.Windows.Forms.Button OkBut;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox BookInfo;
         private System.Windows.Forms.Button RedBut;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label Opisanie;
         private System.Windows.Forms.TextBox OPI;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label Pages;
+        private System.Windows.Forms.Label жанр;
+        private System.Windows.Forms.Label Booook;
+        private System.Windows.Forms.Label Автор;
         private System.Windows.Forms.TextBox JA;
         private System.Windows.Forms.TextBox PAG;
         private System.Windows.Forms.TextBox NM;

@@ -16,11 +16,11 @@ namespace WindowsFormsApp1
 {
 
 
-	public partial class Form1 : Form
+	public partial class Main : Form
 	{
 		public List<Information> Objects = new List<Information>();
 		public List<TextBox> List_Text_Box = new List<TextBox>();
-		public Form1()
+		public Main()
 		{
 			InitializeComponent();
 			List_Text_Box.Add(NM);
